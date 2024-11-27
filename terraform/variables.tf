@@ -103,6 +103,7 @@ variable "event_rule_description" {
 variable "lambda_event_target_id" {
   description = "ID of the EventBridge Lambda target"
   type        = string
+  default     = "lambda-event"
 }
 
 # OpenSearch Variables
