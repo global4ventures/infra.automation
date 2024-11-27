@@ -34,8 +34,8 @@ jobs:
         working-directory: terraform
         env:
           TF_LOG: DEBUG
-jobs:
-  validate:
+
+  plan:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -58,8 +58,8 @@ jobs:
         working-directory: terraform
         env:
           TF_LOG: DEBUG
-jobs:
-  validate:
+
+  apply:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
