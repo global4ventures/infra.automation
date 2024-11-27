@@ -34,3 +34,16 @@ jobs:
         working-directory: terraform
         env:
           TF_LOG: DEBUG
+
+      - name: Terraform Plan
+        run: terraform plan
+        working-directory: terraform
+        env:
+          TF_LOG: DEBUG
+
+      - name: Terraform Apply
+        run: terraform apply -refresh-only
+        #run: terraform apply -auto-approve
+        working-directory: terraform
+        env:
+          TF_LOG: DEBUG
