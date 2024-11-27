@@ -1,4 +1,4 @@
-name: Terraform
+name: Terraform steps
 
 on:
   push:
@@ -34,7 +34,6 @@ jobs:
         working-directory: terraform
         env:
           TF_LOG: DEBUG
-
   plan:
     runs-on: ubuntu-latest
     steps:
@@ -58,7 +57,6 @@ jobs:
         working-directory: terraform
         env:
           TF_LOG: DEBUG
-
   apply:
     runs-on: ubuntu-latest
     steps:
