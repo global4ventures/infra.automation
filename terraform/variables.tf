@@ -84,6 +84,7 @@ variable "api_gateway_name" {
 variable "api_gateway_description" {
   description = "Description of the API Gateway"
   type        = string
+  default     = "apigateway-des"
 }
 
 # Secret manager Variables
