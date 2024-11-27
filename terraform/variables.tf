@@ -84,7 +84,19 @@ variable "api_gateway_name" {
 variable "api_gateway_description" {
   description = "Description of the API Gateway"
   type        = string
-  default     = "chatgbt-api-test"
+}
+
+# Secret manager Variables
+variable "api_secret_name" {
+  description = "Name of the API Gateway secret"
+  type        = string
+  default     = "apigateway-secret"
+}
+
+variable "opensearch_secret_name" {
+  description = "Description of the API Gateway"
+  type        = string
+  default     = "opensearch-secret"
 }
 
 # EventBridge Variables
@@ -97,13 +109,11 @@ variable "event_rule_name" {
 variable "event_rule_description" {
   description = "Description of the EventBridge Rule"
   type        = string
-  default     = "lambda-eventbridge-des"
 }
 
 variable "lambda_event_target_id" {
   description = "ID of the EventBridge Lambda target"
   type        = string
-  default     = "lambda-event"
 }
 
 # OpenSearch Variables
