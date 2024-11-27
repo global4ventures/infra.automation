@@ -97,6 +97,7 @@ variable "event_rule_name" {
 variable "event_rule_description" {
   description = "Description of the EventBridge Rule"
   type        = string
+  default     = "lambda-eventbridge-des"
 }
 
 variable "lambda_event_target_id" {
